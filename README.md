@@ -73,3 +73,129 @@ Ce dossier contiendra tous les rôles, comme le Ansible Galaxy mais en local.
 Enfin, on trouve à la racine les inventaires propres aux environnements.
 
 ## Apercu de l'aborescence complete
+```bash
+.
+├── group_vars
+│   ├── dns.yml
+│   ├── mysql.yml
+│   └── webserver.yml
+├── host_vars
+│   ├── u3antu16.yml
+│   ├── u3antu2.yml
+│   └── u3antu457.yml
+├── inventory_dev
+├── inventory_prod
+├── inventory_rec
+├── IUL
+│   ├── deploy_my_application
+│   │   ├── deploy_my_app.yml
+│   │   ├── get_requirements.sh
+│   │   ├── requirements.yml
+│   │   └── roles
+│   ├── deploy_ntp
+│   │   ├── deploy_ntp.yml
+│   │   ├── get_requirements.sh
+│   │   ├── requirements.yml
+│   │   └── roles
+│   │       └── geerlingguy.ntp
+│   │           ├── defaults
+│   │           │   └── main.yml
+│   │           ├── handlers
+│   │           │   └── main.yml
+│   │           ├── LICENSE
+│   │           ├── meta
+│   │           │   └── main.yml
+│   │           ├── molecule
+│   │           │   └── default
+│   │           │       ├── molecule.yml
+│   │           │       ├── playbook.yml
+│   │           │       └── yaml-lint.yml
+│   │           ├── README.md
+│   │           ├── tasks
+│   │           │   ├── clock-rhel-6.yml
+│   │           │   └── main.yml
+│   │           ├── templates
+│   │           │   ├── clock.j2
+│   │           │   └── ntp.conf.j2
+│   │           └── vars
+│   │               ├── Archlinux.yml
+│   │               ├── Debian.yml
+│   │               ├── FreeBSD.yml
+│   │               ├── RedHat.yml
+│   │               └── Suse.yml
+│   └── update_upgrade_os
+│       ├── get_requirements.sh
+│       ├── requirements.yml
+│       ├── roles
+│       └── update_upgrade_os.yml
+├── my_galaxy
+│   ├── galaxy_docker
+│   │   ├── defaults
+│   │   │   └── main.yml
+│   │   ├── handlers
+│   │   │   └── main.yml
+│   │   ├── LICENSE
+│   │   ├── meta
+│   │   │   └── main.yml
+│   │   ├── molecule
+│   │   │   └── default
+│   │   │       ├── molecule.yml
+│   │   │       ├── playbook.yml
+│   │   │       └── yaml-lint.yml
+│   │   ├── README.md
+│   │   └── tasks
+│   │       ├── docker-compose.yml
+│   │       ├── docker-users.yml
+│   │       ├── main.yml
+│   │       ├── setup-Debian.yml
+│   │       └── setup-RedHat.yml
+│   ├── galaxy_nginx
+│   │   ├── defaults
+│   │   │   └── main.yml
+│   │   ├── handlers
+│   │   │   └── main.yml
+│   │   ├── LICENSE
+│   │   ├── meta
+│   │   │   └── main.yml
+│   │   ├── molecule
+│   │   │   └── default
+│   │   │       ├── molecule.yml
+│   │   │       ├── playbook.yml
+│   │   │       └── yaml-lint.yml
+│   │   ├── README.md
+│   │   ├── tasks
+│   │   │   ├── main.yml
+│   │   │   ├── setup-Archlinux.yml
+│   │   │   ├── setup-Debian.yml
+│   │   │   ├── setup-FreeBSD.yml
+│   │   │   ├── setup-OpenBSD.yml
+│   │   │   ├── setup-RedHat.yml
+│   │   │   ├── setup-Ubuntu.yml
+│   │   │   └── vhosts.yml
+│   │   ├── templates
+│   │   │   ├── nginx.conf.j2
+│   │   │   ├── nginx.repo.j2
+│   │   │   └── vhost.j2
+│   │   └── vars
+│   │       ├── Archlinux.yml
+│   │       ├── Debian.yml
+│   │       ├── FreeBSD.yml
+│   │       ├── OpenBSD.yml
+│   │       └── RedHat.yml
+└───└── galaxy_pip
+        ├── defaults
+        │   └── main.yml
+        ├── LICENSE
+        ├── meta
+        │   └── main.yml
+        ├── molecule
+        │   └── default
+        │       ├── molecule.yml
+        │       ├── playbook.yml
+        │       ├── tests
+        │       │   └── test_default.py
+        │       └── yaml-lint.yml
+        ├── README.md
+        └── tasks
+            └── main.yml
+```
