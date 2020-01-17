@@ -61,3 +61,17 @@ Ce dossier contiendra tous les rôles, comme le Ansible Galaxy mais en local.
 ## Les inventaires
 
 Enfin, on trouve à la racine les inventaires propres aux environnements.
+
+│   ├── galaxy_nginx
+│   │   ├── defaults
+│   │   │   └── main.yml
+│   │   ├── handlers
+│   │   │   └── main.yml
+│   │   ├── LICENSE
+│   │   ├── meta
+│   │   │   └── main.yml
+│   │   ├── molecule
+│   │   │   └── default
+│   │   │       ├── molecule.yml
+│   │   │       ├── playbook.yml
+│   │   │       └── yaml-lint.yml
