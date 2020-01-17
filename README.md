@@ -13,23 +13,23 @@ Voici la structure pour une filiere, IUL dans notre exemple:
 ```bash
 IUL
 |--my_app_to_deploy
-   |--my_playbook_to_deploy.yml
-      |--get_requirements.sh
-      |--requirements.yml
-      |--roles
-         |--galaxy_nginx
-            |--tasks
-               |--main.yml
-            |--defaults
-               |--main.yml
-            |--handlers
-               |--main.yml
-            |--templates
-               |--confile.conf.j2
-               |--another_confile.conf.j2
-   |--another_application_to_deploy
-      |--get_requirements.sh
-      |-- ...
+|  |--my_playbook_to_deploy.yml
+|  |  |--get_requirements.sh
+|  |  |--requirements.yml
+|  |  |--roles
+|  |     |--galaxy_nginx
+|  |        |--tasks
+|  |           |--main.yml
+|  |        |--defaults
+|  |           |--main.yml
+|  |        |--handlers
+|  |           |--main.yml
+|  |        |--templates
+|  |           |--confile.conf.j2
+|  |           |--another_confile.conf.j2
+|  |--another_application_to_deploy
+|  |  |--get_requirements.sh
+|  |  |-- ...
 ```
 ## Le dossier group_vars
 
