@@ -27,6 +27,9 @@ IUL
             |--templates
                |--confile.conf.j2
                |--another_confile.conf.j2
+   |--another_application_to_deploy
+      |--get_requirements.sh
+      |-- ...
 ```
 ## Le dossier group_vars
 
