@@ -18,15 +18,19 @@ IUL
 |  |--requirements.yml
 |  |--roles
 |  |  |--galaxy_nginx
-|  |     |--tasks
-|  |        |--main.yml
-|  |     |--defaults
-|  |        |--main.yml
-|  |     |--handlers
-|  |        |--main.yml
-|  |     |--templates
-|  |        |--confile.conf.j2
-|  |        |--another_confile.conf.j2
+|  |  |  |--tasks
+|  |  |     |--main.yml
+|  |  |  |--defaults
+|  |  |     |--main.yml
+|  |  |  |--handlers
+|  |  |     |--main.yml
+|  |  |  |--templates
+|  |  |     |--confile.conf.j2
+|  |  |     |--another_confile.conf.j2
+|  |  |--galaxy_docker
+|  |  |  |--tasks
+|  |  |      |--main.yml
+|  |  |  |-- ...
 |  |--another_application_to_deploy
 |  |  |--get_requirements.sh
 |  |  |-- ...
