@@ -64,10 +64,12 @@ Exemple:
 |--u3antu11.yml
 |--...
 ```
-## le dossier my_galaxy
+## Le dossier my_galaxy
 
 Ce dossier contiendra tous les rôles, comme le Ansible Galaxy mais en local. 
 
 ## Les inventaires
 
 Enfin, on trouve à la racine les inventaires propres aux environnements.
+
+## Apercu de l'aborescence complete
