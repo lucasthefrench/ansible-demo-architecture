@@ -48,6 +48,14 @@ Voici la structure pour une filiere, IUL dans notre exemple:
 │   │               ├── FreeBSD.yml
 │   │               ├── RedHat.yml
 │   │               └── Suse.yml
+│   ├── group_vars
+│   │   ├── dns.yml
+│   │   ├── mysql.yml
+│   │   └── webserver.yml
+│   ├── host_vars
+│   │   ├── u3antu16.yml
+│   │   ├── u3antu2.yml
+│   │   └── u3antu457.yml
 │   └── update_upgrade_os
 │       ├── get_requirements.sh
 │       ├── requirements.yml
@@ -56,7 +64,7 @@ Voici la structure pour une filiere, IUL dans notre exemple:
 ```
 ## Le dossier group_vars
 
-Le dossier group_vars contient un ensemble de fichiers YAML qui contiennet des variables propres à un groupe de serveur.
+Le dossier group_vars contient un ensemble de fichiers YAML qui contiennent des variables propres à un groupe de serveur.
 
 Exemple:
 
@@ -92,17 +100,10 @@ Enfin, on trouve à la racine les inventaires propres aux environnements.
 ## Apercu de l'aborescence complete
 ```bash
 .
-├── group_vars
-│   ├── dns.yml
-│   ├── mysql.yml
-│   └── webserver.yml
-├── host_vars
-│   ├── u3antu16.yml
-│   ├── u3antu2.yml
-│   └── u3antu457.yml
-├── inventory_dev
-├── inventory_prod
-├── inventory_rec
+├── inventories_backup
+│   ├── back_inventory_dev
+│   ├── back_inventory_prod
+│   └── back_inventory_rec
 ├── IUL
 │   ├── deploy_my_application
 │   │   ├── deploy_my_app.yml
@@ -140,6 +141,14 @@ Enfin, on trouve à la racine les inventaires propres aux environnements.
 │   │               ├── FreeBSD.yml
 │   │               ├── RedHat.yml
 │   │               └── Suse.yml
+│   ├── group_vars
+│   │   ├── dns.yml
+│   │   ├── mysql.yml
+│   │   └── webserver.yml
+│   ├── host_vars
+│   │   ├── u3antu16.yml
+│   │   ├── u3antu2.yml
+│   │   └── u3antu457.yml
 │   └── update_upgrade_os
 │       ├── get_requirements.sh
 │       ├── requirements.yml
@@ -190,16 +199,16 @@ Enfin, on trouve à la racine les inventaires propres aux environnements.
     │   │   ├── setup-Ubuntu.yml
     │   │   └── vhosts.yml
     │   ├── templates
-    │   │   ├── nginx.conf.j2
+    │   │   ├── nginx.conf.j2
     │   │   ├── nginx.repo.j2
     │   │   └── vhost.j2
-    │   └── vars
-    │       ├── Archlinux.yml
-    │       ├── Debian.yml
+    │   └── vars
+    │       ├── Archlinux.yml
+    │       ├── Debian.yml
     │       ├── FreeBSD.yml
     │       ├── OpenBSD.yml
     │       └── RedHat.yml
-    └── galaxy_pip
+    └── galaxy_pip
         ├── defaults
         │   └── main.yml
         ├── LICENSE
