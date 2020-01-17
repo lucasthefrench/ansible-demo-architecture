@@ -11,21 +11,21 @@ Un repertoire par filiere:
 Ces repertoires contiennent les playbooks et roles necessaires au fonctionnement des playbooks.
 Voici la structure pour une filiere, IUL dans notre exemple:
 IUL
-+--my_app_to_deploy
-|  +--my_playbook_to_deploy.yml
-|  +--get_requirements.sh
-|  +--requirements.yml
-|  +--roles
-|     +--galaxy_nginx
-|        +--tasks
-|           +--main.yml
-|        +--defaults
-|           +--main.yml
-|        +--handlers
-|           +--main.yml
-|        +--templates
-|           +--confile.conf.j2
-|           +--another_confile.conf.j2
+|--my_app_to_deploy
+   |--my_playbook_to_deploy.yml
+      |--get_requirements.sh
+      |--requirements.yml
+      |--roles
+         |--galaxy_nginx
+            |--tasks
+               |--main.yml
+            |--defaults
+               |--main.yml
+            |--handlers
+               |--main.yml
+            |--templates
+               |--confile.conf.j2
+               |--another_confile.conf.j2
 
 ## Le dossier group_vars
 
