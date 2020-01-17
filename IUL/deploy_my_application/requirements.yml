@@ -1,0 +1,6 @@
+# from galaxy
+- src: geerlingguy.ntp 
+
+# from GitHub
+#- src: https://github.com/ldrai/my_ntp_role
+#  version: 1.2
