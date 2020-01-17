@@ -11,29 +11,48 @@ Un repertoire par filiere:
 Ces repertoires contiennent les playbooks et roles necessaires au fonctionnement des playbooks.
 Voici la structure pour une filiere, IUL dans notre exemple:
 ```bash
-IUL
-|--my_app_to_deploy
-|  |--my_playbook_to_deploy.yml
-|  |--get_requirements.sh
-|  |--requirements.yml
-|  |--roles
-|  |  |--galaxy_nginx
-|  |  |  |--tasks
-|  |  |     |--main.yml
-|  |  |  |--defaults
-|  |  |     |--main.yml
-|  |  |  |--handlers
-|  |  |     |--main.yml
-|  |  |  |--templates
-|  |  |     |--confile.conf.j2
-|  |  |     |--another_confile.conf.j2
-|  |  |--galaxy_docker
-|  |  |  |--tasks
-|  |  |      |--main.yml
-|  |  |  |-- ...
-|  |--another_application_to_deploy
-|  |  |--get_requirements.sh
-|  |  |-- ...
+├── IUL
+│   ├── deploy_my_application
+│   │   ├── deploy_my_app.yml
+│   │   ├── get_requirements.sh
+│   │   ├── requirements.yml
+│   │   └── roles
+│   ├── deploy_ntp
+│   │   ├── deploy_ntp.yml
+│   │   ├── get_requirements.sh
+│   │   ├── requirements.yml
+│   │   └── roles
+│   │       └── geerlingguy.ntp
+│   │           ├── defaults
+│   │           │   └── main.yml
+│   │           ├── handlers
+│   │           │   └── main.yml
+│   │           ├── LICENSE
+│   │           ├── meta
+│   │           │   └── main.yml
+│   │           ├── molecule
+│   │           │   └── default
+│   │           │       ├── molecule.yml
+│   │           │       ├── playbook.yml
+│   │           │       └── yaml-lint.yml
+│   │           ├── README.md
+│   │           ├── tasks
+│   │           │   ├── clock-rhel-6.yml
+│   │           │   └── main.yml
+│   │           ├── templates
+│   │           │   ├── clock.j2
+│   │           │   └── ntp.conf.j2
+│   │           └── vars
+│   │               ├── Archlinux.yml
+│   │               ├── Debian.yml
+│   │               ├── FreeBSD.yml
+│   │               ├── RedHat.yml
+│   │               └── Suse.yml
+│   └── update_upgrade_os
+│       ├── get_requirements.sh
+│       ├── requirements.yml
+│       ├── roles
+│       └── update_upgrade_os.yml
 ```
 ## Le dossier group_vars
 
@@ -42,11 +61,10 @@ Le dossier group_vars contient un ensemble de fichiers YAML qui contiennet des v
 Exemple:
 
 ```bash
-.
-|--dnsservers.yml
-|--webservers.yml
-|--centos7servers.yml
-|--...
+├── group_vars
+│   ├── dns.yml
+│   ├── mysql.yml
+│   └── webserver.yml
 ```
 ## Le dossier host_vars
 
@@ -58,11 +76,10 @@ A l'instar du dossier group_vars, le dossier host_vars permet de définir des va
 Exemple:
 
 ```bash
-.
-|--u3antu457.yml
-|--u2antw79.yml
-|--u3antu11.yml
-|--...
+├── host_vars
+│   ├── u3antu16.yml
+│   ├── u3antu2.yml
+│   └── u3antu457.yml
 ```
 ## Le dossier my_galaxy
 
