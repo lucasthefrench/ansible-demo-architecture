@@ -10,6 +10,7 @@ Un repertoire par filiere:
 
 Ces repertoires contiennent les playbooks et roles necessaires au fonctionnement des playbooks.
 Voici la structure pour une filiere, IUL dans notre exemple:
+'''bash
 IUL
 |--my_app_to_deploy
    |--my_playbook_to_deploy.yml
@@ -26,7 +27,7 @@ IUL
             |--templates
                |--confile.conf.j2
                |--another_confile.conf.j2
-
+'''
 ## Le dossier group_vars
 
 Le dossier group_vars contient un ensemble de fichiers YAML qui contiennet des variables propres à un groupe de serveur.
