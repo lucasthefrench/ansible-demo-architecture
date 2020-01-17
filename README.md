@@ -1,7 +1,7 @@
-### ansible-demo-architecture
+# ansible-demo-architecture
 exemple de structure du Git pour Ansible
 
-# Les filieres
+## Les filieres
 
 Un repertoire par filiere:
 - IUL
@@ -27,7 +27,7 @@ IUL
 |           +--confile.conf.j2
 |           +--another_confile.conf.j2
 
-# Le dossier group_vars
+## Le dossier group_vars
 
 Le dossier group_vars contient un ensemble de fichiers YAML qui contiennet des variables propres à un groupe de serveur.
 
@@ -39,7 +39,7 @@ Exemple:
 +--centos7servers.yml
 +--...
 
-# Le dossier host_vars
+## Le dossier host_vars
 
 A l'instar du dossier group_vars, le dossier host_vars permet de définir des variables propores à un serveur.
 
@@ -54,10 +54,10 @@ Exemple:
 +--u3antu11.yml
 +--...
 
-# le dossier my_galaxy
+## le dossier my_galaxy
 
 Ce dossier contiendra tous les rôles, comme le Ansible Galaxy mais en local. 
 
-# Les inventaires
+## Les inventaires
 
 Enfin, on trouve à la racine les inventaires propres aux environnements.
