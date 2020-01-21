@@ -7,6 +7,7 @@ Un repertoire par filiere:
 - IUL
 - BW
 - WVS
+- ...
 
 Ces repertoires contiennent les playbooks et roles necessaires au fonctionnement des playbooks.
 Voici la structure pour une filiere, IUL dans notre exemple:
