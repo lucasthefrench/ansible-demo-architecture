@@ -19,7 +19,7 @@ Voici la structure pour une filiere, IUL dans notre exemple:
 │   ├── deploy_ntp
 │   │   ├── deploy_ntp.yml
 │   │   └── roles
-│   │       ├── geerlingguy.ntp
+│   │       ├── galaxy_ntp
 │   │       │   ├── defaults
 │   │       │   │   └── main.yml
 │   │       │   ├── handlers
